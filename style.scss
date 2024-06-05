@@ -1,3 +1,49 @@
-*{
+* {
     box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #0C4B35;
+    padding: 17px 251px;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    width: 100%;
+
+    div:last-child {
+        margin-left: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            color: white; 
+        }
+    }
+    .footer-contact-email{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(Icons-Image/email.svg);
+        width: 25px;
+        height: 25px;
+        background-color: black;
+        color: black;
+    }
 }

@@ -1,3 +1,34 @@
 * {
   box-sizing: border-box;
-}/*# sourceMappingURL=style.css.map */
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #0c4b35;
+  padding: 17px 251px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  width: 100%;
+}
+.footer-contact div:last-child {
+  margin-left: auto;
+}
+.footer-contact a {
+  text-decoration: none;
+  color: white;
+}
+.footer-contact ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-contact ul li {
+  color: white;
+} /*# sourceMappingURL=style.css.map */
