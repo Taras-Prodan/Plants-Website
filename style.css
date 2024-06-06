@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 65px;
+  gap: 55px;
   width: 100%;
 }
 .footer-contact img {
@@ -64,7 +64,7 @@
 
 .new-footer-bar {
   display: flex;
-  padding: 15px 256px;
+  padding: 15px 254px;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -110,19 +110,58 @@
   margin-left: 10px;
 }
 
+.new-footer-bar {
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-new-bar-list,
 .menu-new-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 44px;
-  margin-left: 20%;
+  gap: 37px;
+  margin-left: 27%;
+  position: relative;
+  padding-right: 20px;
+  cursor: pointer;
 }
-.menu-new-bar li {
-  list-style: none;
-  display: flex;
-  align-items: center;
+.menu-new-bar-list ul,
+.menu-new-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.menu-new-bar img {
-  margin-left: 10px;
-  margin-right: -10px;
+.menu-new-bar-list ul li,
+.menu-new-bar ul li {
+  position: relative;
+  padding-right: 25px;
+}
+.menu-new-bar-list ul li::after,
+.menu-new-bar ul li::after {
+  content: "";
+  background-image: url("Icons-Image/arrow icon.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+.menu-new-bar-list ul li:hover,
+.menu-new-bar ul li:hover {
+  color: #00730C;
+}
+.menu-new-bar-list ul li:hover::after,
+.menu-new-bar ul li:hover::after {
+  background-image: url("Icons-Image/green-arrow-down.svg");
+}
+
+.hero {
+  background-image: url(Icons-Image/Hero.png);
+  background-repeat: no-repeat;
+  height: 719px;
+  width: 100%;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */
