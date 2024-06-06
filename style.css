@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -64,7 +65,7 @@
 
 .new-footer-bar {
   display: flex;
-  padding: 15px 254px;
+  padding: 15px 256px;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -122,8 +123,22 @@
   gap: 37px;
   margin-left: 27%;
   position: relative;
-  padding-right: 20px;
   cursor: pointer;
+}
+.menu-new-bar-list a,
+.menu-new-bar a {
+  text-decoration: none;
+  color: black;
+  font-family: "Nunito";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: capitalize;
+}
+.menu-new-bar-list a:hover,
+.menu-new-bar a:hover {
+  color: #00730C; /* змінюємо колір тексту a */
 }
 .menu-new-bar-list ul,
 .menu-new-bar ul {
@@ -135,6 +150,12 @@
 .menu-new-bar ul li {
   position: relative;
   padding-right: 25px;
+  font-family: Nunito;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: capitalize;
 }
 .menu-new-bar-list ul li::after,
 .menu-new-bar ul li::after {

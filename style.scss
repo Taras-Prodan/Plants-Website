@@ -67,7 +67,7 @@
 }
 .new-footer-bar{
     display: flex;
-    padding: 15px 254px;
+    padding: 15px 256px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
@@ -117,48 +117,67 @@
     box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
-.menu-new-bar-list, 
+.menu-new-bar-list,
 .menu-new-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 37px;
-    margin-left: 27%; 
+    margin-left: 27%;
     position: relative;
-    padding-right: 20px;
     cursor: pointer;
-    
-    ul {
-        list-style-type: none; 
-        padding: 0; 
-        margin: 0; 
-    
-        li { 
-        position: relative;
-        padding-right: 25px; 
-    
-        &::after {
-        content: "";
-        background-image: url('Icons-Image/arrow icon.svg');
-        background-size: 15px 15px;
-        background-repeat: no-repeat;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 15px;
-        height: 15px; 
-        }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: "Nunito";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 125% */
+        text-transform: capitalize;
 
         &:hover {
-        color: #00730C; 
-        &::after {
-        background-image: url('Icons-Image/green-arrow-down.svg'); 
-
+            color: #00730C; /* змінюємо колір тексту a */
         }
-      }
     }
-  }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-right: 25px;
+            font-family: Nunito;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 125% */
+            text-transform: capitalize;
+
+        &::after {
+            content: "";
+            background-image: url('Icons-Image/arrow icon.svg');
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            }
+
+        &:hover {
+            color: #00730C;
+            &::after {
+            background-image: url('Icons-Image/green-arrow-down.svg');
+                }
+            }
+        }
+    }
 }
 .hero{
     background-image: url(Icons-Image/Hero.png);
