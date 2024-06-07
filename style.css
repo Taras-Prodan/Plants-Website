@@ -7,27 +7,28 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 60px;
   background: #0C4B35;
-  padding: 17px 251px;
+  padding: 17px 0;
 }
 
-.footer-contact {
+.header-contact {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 55px;
+  max-width: 1400px;
   width: 100%;
 }
-.footer-contact img {
+.header-contact img {
   width: 25px;
   height: 25px;
   margin-right: 10px;
 }
-.footer-contact div:last-child {
+.header-contact div:last-child {
   margin-left: auto;
 }
-.footer-contact a {
+.header-contact a {
   text-decoration: none;
   color: white;
   font-family: "Poppins";
@@ -36,43 +37,43 @@
   font-weight: 400;
   line-height: 25px;
 }
-.footer-contact ul {
+.header-contact ul {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.footer-contact ul li {
+.header-contact ul li {
   color: white;
 }
-.footer-contact .footer-contact-email,
-.footer-contact .footer-contact-number,
-.footer-contact .footer-contact-adress {
+.header-contact .header-contact-email,
+.header-contact .header-contact-number,
+.header-contact .header-contact-adress {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-contact .language-change-footer ul {
+.header-contact .language-change-header ul {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer-contact .language-change-footer img {
+.header-contact .language-change-header img {
   width: 12px;
   height: 7px;
   margin-left: 5px;
 }
 
-.new-footer-bar {
+.new-header-bar {
+  width: 100%;
   display: flex;
-  padding: 15px 256px;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
   gap: 10px;
-  width: 100%;
   height: 85px;
 }
-.new-footer-bar img {
+.new-header-bar img {
   width: 120px;
   height: 55px;
 }
@@ -111,7 +112,7 @@
   margin-left: 10px;
 }
 
-.new-footer-bar {
+.new-header-bar {
   box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -121,7 +122,6 @@
   align-items: center;
   justify-content: center;
   gap: 37px;
-  margin-left: 27%;
   position: relative;
   cursor: pointer;
 }
