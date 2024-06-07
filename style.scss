@@ -84,6 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 0 0 45px;
 
     button{
         width: 170px;
@@ -116,6 +117,9 @@
 }
 .new-header-bar{
     box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5%;
 }
 
 .menu-new-bar-list,
@@ -123,25 +127,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 37px;
+    gap: 43px;
     position: relative;
     cursor: pointer;
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-family: "Nunito";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px; /* 125% */
-        text-transform: capitalize;
-
-        &:hover {
-            color: #00730C; /* змінюємо колір тексту a */
-        }
-    }
-
     ul {
         list-style-type: none;
         padding: 0;
@@ -154,28 +142,37 @@
             font-size: 15px;
             font-style: normal;
             font-weight: 700;
-            line-height: 20px; /* 125% */
+            line-height: 20px;
             text-transform: capitalize;
 
-        &::after {
-            content: "";
-            background-image: url('Icons-Image/arrow icon.svg');
-            background-size: 15px 15px;
-            background-repeat: no-repeat;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 15px;
-            height: 15px;
+            &::after {
+                content: "";
+                background-image: url('Icons-Image/arrow icon.svg');
+                background-size: 15px 15px;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
             }
 
-        &:hover {
-            color: #00730C;
-            &::after {
-            background-image: url('Icons-Image/green-arrow-down.svg');
+            &:hover {
+                color: #00730C;
+                &::after {
+                    background-image: url('Icons-Image/green-arrow-down.svg');
                 }
             }
+        }
+        li:last-child {
+            padding-right: 0; 
+        }
+        li:last-child::after {
+            display: none;
+        }
+        li:last-child:hover {
+            color: #00730C;
         }
     }
 }
