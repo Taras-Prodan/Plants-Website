@@ -261,7 +261,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 125% */
+  line-height: 20px;
   text-transform: capitalize;
   color: #212529;
 }
@@ -329,6 +329,14 @@
 }
 .hero-tags .round-tag-hero p {
   color: #212529;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.hero-tags .round-tag-hero p span {
   font-family: Nunito;
   font-size: 16px;
   font-style: normal;
