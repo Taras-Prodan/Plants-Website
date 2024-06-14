@@ -1,23 +1,21 @@
 * {
     box-sizing: border-box;
 }
-.header-contact {
+.header-contact{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 55px;
-    width: 100%;  
-    background: #0C4B35;
-    padding: 17px 10%;
+    width: 100%; 
+    padding: 17px;
+    box-sizing: border-box; 
+    margin: 0 auto; 
+    background: #0C4B35; 
 
     img{
         width: 25px;
         height: 25px;
         margin-right: 10px;
-    }
-
-    div:last-child {
-        margin-left: auto;
     }
     a {
         text-decoration: none;
@@ -57,19 +55,39 @@
         }
     }
 }
+.header-contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1470px;
+    gap: 55px;
+    box-sizing: border-box; 
+    margin: 0 auto; 
+
+    div:last-child {
+        margin-left: auto;
+    }
+}
 .new-header-bar{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-    gap: 10px;
     height: 85px;
 
     img{
         width: 120px;
         height: 55px;
     }
+}
+.new-header-bar-content{
+    width: 100%;
+    max-width: 1470px;
+    box-sizing: border-box; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
 }
 .new-bar-button{
     display: flex;
@@ -110,7 +128,7 @@
     box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    padding: 0 10%;
+
 }
 
 .menu-new-bar-list,
@@ -175,6 +193,7 @@
     max-width: 1920px;
     flex-shrink: 0;
     position: relative;
+    margin: auto;
 
     .hero-big-img{
         display: flex;
@@ -296,6 +315,13 @@
         }
     }
 }
+.hero-tags-text{
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */text-transform: capitalize;
+}
 .icon-png-hero{
     margin-top: -60px;
 }
@@ -349,5 +375,96 @@
                 text-transform: capitalize;
             }
         }
+    }
+}
+.main-services-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20%;
+
+    span{
+        color: #00730C;
+    }
+    p{
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        color:#676767;
+        width: 1140px;
+    }
+
+    .main-services-about {
+        font-family: 'Nunito', sans-serif;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+}
+.main-cards-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 10% 0 10%;
+}
+
+.main-cards-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 10% 0 10%;
+}
+
+.cards-main {
+    align-items: center;
+    padding: 0 43px;
+    justify-content: space-between;
+    width: 340px; 
+    height: 380px; 
+    background-color: #f0f0f0; 
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(172deg, #FFF -10.79%, #FFF 94.04%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    span {
+        margin-bottom: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Nunito;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        color: #212529;
+    }
+
+    p {
+        display: block;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        color: #676767;
+        margin-top: auto;
+        margin-bottom: 60px;
     }
 }
